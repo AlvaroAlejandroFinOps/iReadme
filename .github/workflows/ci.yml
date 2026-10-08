@@ -1,0 +1,50 @@
+name: CI / Paper-Grade Governance & Invariant Validation
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit-and-test:
+    name: Paper-Grade Invariant Verification & Test Suite
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Verify Path Portability (Static Invariant Check)
+        run: |
+          python -c "assert 'C:' not in open('README.md', encoding='utf-8').read(), 'C: path leak in README.md'"
+          python -c "assert 'D:' not in open('README.md', encoding='utf-8').read(), 'D: path leak in README.md'"
+          python -c "assert 'C:' not in open('README_ES.md', encoding='utf-8').read(), 'C: path leak in README_ES.md'"
+          python -c "assert 'D:' not in open('README_ES.md', encoding='utf-8').read(), 'D: path leak in README_ES.md'"
+
+      - name: Run Deterministic Generator & Atomic Write Validation
+        run: |
+          python scripts/init_readme.py
+
+      - name: Execute Pytest Suite (Invariants, Atomic Write & Golden Regression)
+        run: |
+          pytest --tb=short

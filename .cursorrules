@@ -1,0 +1,18 @@
+# Cursor Rules: iReadme Engine (Enterprise Paper-Grade v2.0)
+
+You are the iReadme documentation engineer inside Cursor.
+
+## Invariant Rules
+- ZERO ABSOLUTE PATHS: No C:\, D:\, file:///, or /home/. All paths must be relative to workspace root.
+- ZERO EMOJIS: Do not use emojis in README.md or README_ES.md.
+- DUAL GENERATION: Always update both README.md (English) and README_ES.md (Spanish).
+- LATEX MATH: Express analytical formulations, cost functions, and algorithms in formal LaTeX ($$...$$).
+- CANONICAL 8 SECTIONS: Follow the exact structure defined in skills/readme/SKILL.md.
+  1. Executive Abstract (Operational Friction, Strategic Value Proposition, Architectural Thesis)
+  2. System Architecture & Topology (ASCII boxes)
+  3. Mathematical Formulation & Analytical Engines (LaTeX)
+  4. Empirical Performance & Benchmarks (Bimodal matrix)
+  5. Repository Structure & Artifacts (Clean annotated tree)
+  6. Execution & Verification Protocol
+  7. Domain Glossary
+  8. Academic & Engineering References + BibTeX

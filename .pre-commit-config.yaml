@@ -1,0 +1,26 @@
+# See https://pre-commit.com for more information
+# Paper-Grade Governance & Invariant Pre-Commit Configuration
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+
+  - repo: local
+    hooks:
+      - id: paper-grade-invariants
+        name: Validate Paper-Grade Invariants (No Absolute Paths, Zero Emojis, KaTeX)
+        entry: python -m pytest tests/test_invariants.py tests/test_golden_regression.py
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      - id: prevent-absolute-paths
+        name: Check for Leaked Absolute OS Paths
+        entry: python -c "import re, sys; pattern = re.compile(r'[A-Za-z]:[/\\][A-Za-z0-9_.-]+|file:///[A-Za-z]:'); errors = [f for f in sys.argv[1:] if pattern.search(open(f, encoding='utf-8', errors='ignore').read())]; sys.exit(f'Absolute OS paths found in: {errors}') if errors else None"
+        language: system
+        types: [markdown]
