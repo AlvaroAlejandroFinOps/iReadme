@@ -1,12 +1,12 @@
 {
   "project_name": "iReadme",
   "project_path": "D:\\0001 HyperScale Thinking\\PROYECTOS CLOUD\\iContext\\iReadme",
-  "audit_date": "2026-10-07 22:53:32",
+  "audit_date": "2026-10-07 23:08:37",
   "auditor": "MetricsThinking™ Universal Auditor",
   "profile_used": "agent-skill",
   "domain_archetype": "agent-skill",
   "inspection_mode": "governance_spec",
-  "git_commit": "1b74ba5",
+  "git_commit": "80f07b3",
   "git_branch": "master",
   "seed_detected": true,
   "seed_version": "2.0",
@@ -416,16 +416,16 @@
           "criterion_id": "M10-C02",
           "name": "Referencia de Comandos y Ayuda Rápida",
           "fulfilled": true,
-          "evidence_path": "01_seed/seed-iReadme-master.md",
-          "evidence_detail": "Instrucciones operativas y ayuda de comandos documentadas en '01_seed/seed-iReadme-master.md'.",
+          "evidence_path": "artifacts/plans/active/INFERRED_ROADMAP.md",
+          "evidence_detail": "Instrucciones operativas y ayuda de comandos documentadas en 'artifacts/plans/active/INFERRED_ROADMAP.md'.",
           "remediation_hint": "Incluir cheatsheet o referencia rápida en la documentación."
         },
         {
           "criterion_id": "M10-C03",
           "name": "Roadmap Operacional y Nuevos Asistentes",
           "fulfilled": true,
-          "evidence_path": "02_Foundation/Engine/engine_readme.md",
-          "evidence_detail": "Roadmap formal de extensibilidad y capacidades futuras documentado en '02_Foundation/Engine/engine_readme.md'.",
+          "evidence_path": "01_seed/seed-iReadme-master.md",
+          "evidence_detail": "Roadmap formal de extensibilidad y capacidades futuras documentado en '01_seed/seed-iReadme-master.md'.",
           "remediation_hint": "Definir roadmap de evolución futura e integración con nuevos modelos de IA."
         }
       ],

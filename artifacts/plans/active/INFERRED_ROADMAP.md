@@ -4,7 +4,7 @@
 > **Arquetipo de Dominio:** `agent-skill` | **Modo:** `governance_spec`  
 > **Estado Consolidado:** `100.0% / 100.0%` — **Excelencia Operativa / Producción (90.0% - 100.0%)**  
 > **Cuello de Botella Activo:** `Ninguno. Todos los módulos canónicos se encuentran al 100%.`  
-> **Fecha de Emisión:** `2026-10-07 22:53:32`  
+> **Fecha de Emisión:** `2026-10-07 23:08:37`  
 
 Este documento representa el **Roadmap Operacional y de Ejecución Técnica** derivado por ingeniería inversa a partir de la evidencia física (Ground Truth) del repositorio. Sirve como guía de trabajo para el equipo de arquitectura y desarrollo.
 
@@ -133,8 +133,8 @@ Este documento representa el **Roadmap Operacional y de Ejecución Técnica** de
 
 ### Checklists de Implementación
 - [x] **Memoria Técnica (ThinkingSeed Propio)** (`M10-C01`): Memoria técnica formal (ThinkingSeed) identificada en '01_seed/seed-iReadme-master.md'. *(Evidencia: `01_seed/seed-iReadme-master.md`)*
-- [x] **Referencia de Comandos y Ayuda Rápida** (`M10-C02`): Instrucciones operativas y ayuda de comandos documentadas en '01_seed/seed-iReadme-master.md'. *(Evidencia: `01_seed/seed-iReadme-master.md`)*
-- [x] **Roadmap Operacional y Nuevos Asistentes** (`M10-C03`): Roadmap formal de extensibilidad y capacidades futuras documentado en '02_Foundation/Engine/engine_readme.md'. *(Evidencia: `02_Foundation/Engine/engine_readme.md`)*
+- [x] **Referencia de Comandos y Ayuda Rápida** (`M10-C02`): Instrucciones operativas y ayuda de comandos documentadas en 'artifacts/plans/active/INFERRED_ROADMAP.md'. *(Evidencia: `artifacts/plans/active/INFERRED_ROADMAP.md`)*
+- [x] **Roadmap Operacional y Nuevos Asistentes** (`M10-C03`): Roadmap formal de extensibilidad y capacidades futuras documentado en '01_seed/seed-iReadme-master.md'. *(Evidencia: `01_seed/seed-iReadme-master.md`)*
 
 ### Entregables Tangibles Esperados
 - ✅ Todos los artefactos y contratos físicos de **M10** han sido verificados satisfactoriamente en disco.
