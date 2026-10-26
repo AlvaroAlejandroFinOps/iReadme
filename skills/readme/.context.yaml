@@ -1,0 +1,11 @@
+version: 1.0
+directory: skills/readme
+role: domain_extension
+purpose: Subdominio readme de skills/ (auto scaffold).
+relevance: high
+crawl: true
+read_priority: p1
+seed_reference: optional
+tier1_preload: false
+token_density: sparse
+instructions: Hereda directivas de skills/. Enriquecer con /idir enrich.

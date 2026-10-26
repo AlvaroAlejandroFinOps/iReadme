@@ -5,7 +5,8 @@ purpose: "Núcleo del framework de automatización, lógica de ruteo, indexació
 relevance: critical
 crawl: true
 read_priority: p1
-token_density: low
+seed_reference: optional
+token_density: sparse
 instructions: Contiene los utilitarios de gobernanza y especificación formal de directorios.
 key_files:
   - "engine_readme.md"
