@@ -2,7 +2,7 @@
   "$schema": "../schemas/icontext_bus.schema.json",
   "protocol_version": "5.0.0",
   "project": "iReadme",
-  "updated_at": "2026-10-29T01:58:06.814117+00:00",
+  "updated_at": "2026-10-29T02:16:17.648664+00:00",
   "layers": {
     "l0_idirectory": {
       "version": "5.0.0",
@@ -42,5 +42,13 @@
       "path_leakage_rate": 0.0,
       "synced_with_topology_hash": "6d38bd6e055c351d89174d37b06ccef320818a9fa241dfe0a98964133d42a086"
     }
+  },
+  "l1_thinkingseed": {
+    "seed_path": "./01_seed/seed-iReadme-master.md",
+    "seed_version": "5.0",
+    "ast_coverage_pct": 100.0,
+    "untracked_Public_symbols": [],
+    "freshness_status": "SYNCED",
+    "last_validated_at": "2026-10-29T02:16:17.648664+00:00"
   }
 }
