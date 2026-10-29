@@ -112,9 +112,9 @@ $$\mathcal{H}(\mathcal{D}) = -\sum_{k=1}^{K} p(w_k) \log_2 p(w_k) \le \Gamma_{ma
 iReadme/
 ├── .cursorrules                # Reglas de contexto para Cursor IDE
 ├── .gitignore                  # Definición de políticas de exclusión de git
-├── 001_Seed/                   # Snapshots de contexto pasivo (ThinkingSeed)
-│   └── seed-iReadme.md         # Memoria genética y ADN del sistema
-├── 02_Foundation/              # Manifiestos fundacionales y gobernanza de directorios
+├── 01_seed/                    # Snapshots de contexto pasivo (ThinkingSeed)
+│   └── seed-iReadme-master.md  # Memoria genética y ADN del sistema (v5.0)
+├── 02_foundation/              # Manifiestos fundacionales y gobernanza de directorios
 ├── AGENTS.md                   # Especificación universal para agentes autónomos
 ├── CLAUDE.md                   # Guía de integración para Anthropic Claude Code
 ├── GEMINI.md                   # Gobernanza institucional y reglas Paper-Grade
@@ -123,7 +123,7 @@ iReadme/
 ├── Propuesta Skill.md          # Propuesta consolidada de la skill
 ├── README.md                   # Documentación técnica maestra en Inglés
 ├── README_ES.md                # Documentación técnica sincronizada en Español
-├── Tools/                      # Utilidades y scripts auxiliares
+├── tools/                      # Utilidades y scripts auxiliares
 ├── config/                     # Configuraciones de canalización y entorno
 ├── data/                       # Datasets de prueba y estructuras de muestra
 ├── docs/                       # Documentación extendida del dominio

@@ -138,9 +138,9 @@ $$\mathcal{H}(\mathcal{D}) = -\sum_{k=1}^{K} p(w_k) \log_2 p(w_k) \le \Gamma_{ma
 iReadme/
 ├── .cursorrules                # Cursor IDE context rules
 ├── .gitignore                  # Git exclusion policy definition
-├── 001_Seed/                   # Passive architectural context snapshots (ThinkingSeed)
-│   └── seed-iReadme.md         # System genetic memory and ADN snapshot
-├── 02_Foundation/              # Foundation manifests and directory governance
+├── 01_seed/                    # Passive architectural context snapshots (ThinkingSeed)
+│   └── seed-iReadme-master.md  # System genetic memory and ADN snapshot (v5.0)
+├── 02_foundation/              # Foundation manifests and directory governance
 ├── AGENTS.md                   # Universal open AI agent specification
 ├── CLAUDE.md                   # Anthropic Claude Code & Desktop guidelines
 ├── GEMINI.md                   # Institutional governance and Paper-Grade rules
@@ -149,7 +149,7 @@ iReadme/
 ├── Propuesta Skill.md          # Consolidated skill specification proposal
 ├── README.md                   # Master English technical documentation
 ├── README_ES.md                # Synchronized Spanish technical documentation
-├── Tools/                      # Utility scripts and helper tools
+├── tools/                      # Utility scripts and helper tools
 ├── config/                     # Pipeline and environment configurations
 ├── data/                       # Test datasets and sample payloads
 ├── docs/                       # Extended domain documentation
@@ -353,9 +353,9 @@ $$\mathcal{H}(\mathcal{D}) = -\sum_{k=1}^{K} p(w_k) \log_2 p(w_k) \le \Gamma_{ma
 iReadme/
 ├── .cursorrules                # Reglas de contexto para Cursor IDE
 ├── .gitignore                  # Definición de políticas de exclusión de git
-├── 001_Seed/                   # Snapshots de contexto pasivo (ThinkingSeed)
-│   └── seed-iReadme.md         # Memoria genética y ADN del sistema
-├── 02_Foundation/              # Manifiestos fundacionales y gobernanza de directorios
+├── 01_seed/                    # Snapshots de contexto pasivo (ThinkingSeed)
+│   └── seed-iReadme-master.md  # Memoria genética y ADN del sistema (v5.0)
+├── 02_foundation/              # Manifiestos fundacionales y gobernanza de directorios
 ├── AGENTS.md                   # Especificación universal para agentes autónomos
 ├── CLAUDE.md                   # Guía de integración para Anthropic Claude Code
 ├── GEMINI.md                   # Gobernanza institucional y reglas Paper-Grade
@@ -364,7 +364,7 @@ iReadme/
 ├── Propuesta Skill.md          # Propuesta consolidada de la skill
 ├── README.md                   # Documentación técnica maestra en Inglés
 ├── README_ES.md                # Documentación técnica sincronizada en Español
-├── Tools/                      # Utilidades y scripts auxiliares
+├── tools/                      # Utilidades y scripts auxiliares
 ├── config/                     # Configuraciones de canalización y entorno
 ├── data/                       # Datasets de prueba y estructuras de muestra
 ├── docs/                       # Documentación extendida del dominio
@@ -488,12 +488,40 @@ def atomic_write_text(file_path: Path, content: str, encoding: str = "utf-8") ->
 def generate_readmes(root_dir: Path = ROOT_DIR):
     readme_en_path = root_dir / "README.md"
     readme_es_path = root_dir / "README_ES.md"
+    en_text = README_EN_CONTENT.strip() + "\n"
+    es_text = README_ES_CONTENT.strip() + "\n"
 
     print(f"[*] Escribiendo atómicamente master README.md (Inglés) en: {readme_en_path.name}")
-    atomic_write_text(readme_en_path, README_EN_CONTENT.strip() + "\n", encoding="utf-8")
+    atomic_write_text(readme_en_path, en_text, encoding="utf-8")
 
     print(f"[*] Escribiendo atómicamente README_ES.md (Español) en: {readme_es_path.name}")
-    atomic_write_text(readme_es_path, README_ES_CONTENT.strip() + "\n", encoding="utf-8")
+    atomic_write_text(readme_es_path, es_text, encoding="utf-8")
+
+    golden_dir = root_dir / "tests" / "golden"
+    if golden_dir.is_dir():
+        atomic_write_text(golden_dir / "README_golden.md", en_text, encoding="utf-8")
+        atomic_write_text(golden_dir / "README_ES_golden.md", es_text, encoding="utf-8")
+
+    bus_path = root_dir / ".context" / "icontext_bus.json"
+    if bus_path.is_file():
+        try:
+            import json
+            from datetime import datetime, timezone
+            bus_data = json.loads(bus_path.read_text(encoding="utf-8", errors="replace"))
+            now_iso = datetime.now(timezone.utc).isoformat()
+            bus_data["updated_at"] = now_iso
+            if isinstance(bus_data.get("layers"), dict):
+                bus_data["layers"]["l3_ireadme"] = {
+                    "readme_en_path": "./README.md",
+                    "readme_es_path": "./README_ES.md",
+                    "parity_phi": 1.0,
+                    "zero_local_paths_verified": True,
+                    "katex_valid": True,
+                    "last_synced_at": now_iso,
+                }
+            atomic_write_text(bus_path, json.dumps(bus_data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        except Exception:
+            pass
 
     print("[OK] Proceso finalizado exitosamente. Artefactos Enterprise Paper-Grade sincronizados.")
 

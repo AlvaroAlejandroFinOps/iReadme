@@ -1,15 +1,12 @@
 version: 1.0
 directory: 02_foundation/engine
 role: core_engine
-purpose: Especificaciones formales del motor de gobernanza y arquitectura iDirectory v4.1.
+purpose: "Núcleo del framework de automatización, lógica de ruteo, indexación y governance engine."
 relevance: critical
 crawl: true
 read_priority: p1
 seed_reference: optional
 token_density: sparse
-instructions: Contiene directivas de gobernanza y manifiesto formal de directorios.
+instructions: Contiene los utilitarios de gobernanza y especificación formal de directorios.
 key_files:
-  - "engine_readme.md: Manifiesto fundacional de iDirectory y roles"
-  - "EngineReadme.md: Especificación ejecutiva del motor de documentación"
-exported_to:
-  - "docs/architecture"
+  - "engine_readme.md"
