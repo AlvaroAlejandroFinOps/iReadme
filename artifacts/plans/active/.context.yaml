@@ -1,10 +1,15 @@
 version: 1.0
 directory: artifacts/plans/active
 role: active_plans
-purpose: "Planes de capacidad activos (F-SKUs), presupuestos cloud vigentes e hitos operativos en curso."
+purpose: "Planes activos de evolución estratégica, roadmap inferido y estandarización."
 relevance: high
 crawl: true
 read_priority: p1
 seed_reference: optional
 token_density: sparse
-instructions: Planes y decisiones vigentes. Consultar antes de modificar infraestructura o presupuestos.
+instructions: Planes vigentes. Consultar antes de alterar arquitectura o documentación.
+key_files:
+  - "plan_estilo_vanguardia_ireadme.md: Plan Enterprise Paper-Grade v2.0 multi-IA"
+  - "INFERRED_ROADMAP.md: Hoja de ruta estratégica con hitos de ingeniería"
+imports_from:
+  - "01_seed"

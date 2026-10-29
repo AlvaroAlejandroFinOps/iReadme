@@ -1,10 +1,17 @@
 version: 1.0
 directory: tests
 role: test_suites
-purpose: "Suites de pruebas unitarias, integración y calidad de datos (Great Expectations / pytest)."
+purpose: "Suite de verificación formal, regresión golden y validación de invariantes."
 relevance: high
 crawl: true
 read_priority: p1
 seed_reference: optional
 token_density: medium
-instructions: Pruebas de verificación de software y pipelines.
+instructions: "Ejecutar con pytest. Valida paridad dual, balance KaTeX e invariantes."
+key_files:
+  - "test_invariants.py: Invariantes de portabilidad, KaTeX, paridad y BibTeX"
+  - "test_atomic_write.py: Pruebas de I/O atómico y preservación UTF-8"
+  - "test_golden_regression.py: Regresión estricta contra masters golden"
+imports_from:
+  - "scripts"
+  - "tests/golden"

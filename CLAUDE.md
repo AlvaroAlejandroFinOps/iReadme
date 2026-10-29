@@ -7,7 +7,7 @@ The `iReadme` engine enforces the **Enterprise Paper-Grade v2.0** standard for r
 
 ## Critical Instructions for Claude
 1. **Never Output Absolute Paths:**
-   - Do NOT output paths containing `C:`, `D:`, `file:///`, or `/home/`.
+   - Do NOT output paths containing `C:`, `D:`, `file://`, or `/home/`.
    - Every reference must be relative to the repository root (e.g., `src/`, `skills/readme/SKILL.md`).
 2. **Zero Emojis:**
    - Claude must never use emojis or informal exclamations in documentation artifacts.

@@ -1,10 +1,17 @@
 version: 1.0
 directory: scripts
 role: ops_automation
-purpose: "Scripts operativos del sistema operativo (bash, powershell, make) para tareas de mantenimiento."
+purpose: "Scripts de automatización operativa, generación y distribución de skills."
 relevance: medium
 crawl: true
 read_priority: p2
 seed_reference: optional
 token_density: sparse
-instructions: Automatización operativa de terminal.
+instructions: Ejecutar con Python en venv. Contiene init_readme.py e install_skill.py.
+key_files:
+  - "init_readme.py: generate_readmes(root_dir) -> None"
+  - "install_skill.py: install_to_antigravity(), install_to_claude()"
+imports_from:
+  - "config"
+exported_to:
+  - "tests"

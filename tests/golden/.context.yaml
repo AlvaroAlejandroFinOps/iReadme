@@ -1,11 +1,16 @@
 version: 1.0
 directory: tests/golden
 role: test_suites
-purpose: Subdominio golden de tests/ (auto scaffold).
+purpose: Líneas base canónicas (Golden Masters) de README.md y README_ES.md.
 relevance: high
 crawl: true
 read_priority: p1
 seed_reference: optional
 tier1_preload: false
-token_density: sparse
-instructions: Hereda directivas de tests/. Enriquecer con /idir enrich.
+token_density: dense
+instructions: Archivos de referencia inmutables comparados por test_golden_regression.py.
+key_files:
+  - "README_golden.md: Master en inglés para validación de regresión golden v2.0"
+  - "README_ES_golden.md: Master en español para validación de regresión golden v2.0"
+exported_to:
+  - tests

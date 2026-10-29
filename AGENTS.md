@@ -7,7 +7,7 @@ When instructed to create, format, or synchronize repository documentation (`REA
 
 ## Mandatory Engineering Rules
 1. **Zero Path Leakage (Absolute Portability):**
-   - Strictly forbidden to include OS-specific absolute paths (`C:\`, `D:\`, `file:///`, `/home/`).
+   - Strictly forbidden to include OS-specific absolute paths (`C:\`, `D:\`, URI schemes like `file://`, `/home/`).
    - Every file link must be relative to the workspace root (`src/`, `config/`, `skills/`, `docs/`, `tests/`).
    - Dual-language header must use relative links:
      - In `README.md`: `**Language:** [English](README.md) | [Español](README_ES.md)`

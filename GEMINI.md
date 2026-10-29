@@ -6,7 +6,7 @@ Este archivo establece las directrices de ingeniería y documentación instituci
 Cualquier generación o actualización de los archivos `README.md` y `README_ES.md` debe cumplir estrictamente con el estándar definido en `skills/readme/SKILL.md` y la skill global `/readme`:
 
 1. **Aislamiento de Rutas (Portabilidad Total):**
-   - Queda estrictamente prohibido incluir rutas locales absolutas del sistema operativo (como `C:\...`, `D:\...`, `file:///...`, `/home/...`).
+   - Queda estrictamente prohibido incluir rutas locales absolutas del sistema operativo (como `C:\...`, `D:\...`, esquemas `file://...`, `/home/...`).
    - Todas las referencias a carpetas, scripts y archivos deben ser relativas a la raíz del repositorio (`src/`, `config/`, `docs/`, `skills/`, `tests/`, etc.).
    - El header de conmutación de idioma debe utilizar enlaces relativos limpios:
      - En `README.md`: `**Language:** [English](README.md) | [Español](README_ES.md)`

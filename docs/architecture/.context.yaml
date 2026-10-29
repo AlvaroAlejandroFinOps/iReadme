@@ -1,10 +1,15 @@
 version: 1.0
 directory: docs/architecture
 role: architecture_diagrams
-purpose: "Diagramas de arquitectura multi-cloud, topologías C4 y flujos de datos de las capas Medallion."
+purpose: "Diagramas y topologías de arquitectura visual, planos de control y kernel."
 relevance: high
 crawl: true
 read_priority: p1
 seed_reference: optional
 token_density: sparse
-instructions: Diagramas y especificaciones de alto nivel de sistemas.
+instructions: "Documentación técnica del plano de ingestión, gobernanza y kernel analítico."
+key_files:
+  - "system_topology.md: Diagrama Mermaid y desglose por planos de control"
+  - "topology.svg: Representación vectorial visual de la topología"
+imports_from:
+  - "02_foundation/engine"

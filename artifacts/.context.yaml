@@ -1,11 +1,15 @@
 version: 1.0
 directory: artifacts
 role: namespace
-purpose: Contenedor de subdominios canónicos de artifacts/.
+purpose: Contenedor de reportes de benchmark, auditorías de cobertura y métricas.
 relevance: medium
 crawl: true
 read_priority: p2
 seed_reference: optional
 tier1_preload: false
-token_density: sparse
-instructions: Sin lógica propia. Leer el beacon del subdirectorio objetivo.
+token_density: dense
+instructions: Consultar reportes analíticos de benchmarks y matriz holística de métricas.
+key_files:
+  - "benchmark_coverage_report.md: Reporte empírico de benchmarks y cobertura"
+  - "MetricsThinking.md: Auditoría holística y matriz de métricas del ecosistema"
+  - "MetricsThinking.json: Vector estructurado de telemetría y gobernanza"

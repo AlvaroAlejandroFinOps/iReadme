@@ -1,10 +1,15 @@
 version: 1.0
 directory: config
 role: configuration
-purpose: "Parámetros de entorno (dev, staging, prod) y variables de configuración desacopladas."
+purpose: Configuración canónica de políticas de Context Engineering y parámetros.
 relevance: high
 crawl: true
 read_priority: p1
 seed_reference: optional
 token_density: sparse
-instructions: Variables y parámetros. NUNCA colocar claves secretas en texto plano.
+instructions: Define perfiles Tier 1A/Tier 2 y reglas de presupuesto de tokens. Sin secretos.
+key_files:
+  - "context_policy.json: Política de Context Engineering y límites de tokens"
+exported_to:
+  - "scripts"
+  - "skills/readme"

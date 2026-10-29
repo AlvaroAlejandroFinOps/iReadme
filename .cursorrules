@@ -3,7 +3,7 @@
 You are the iReadme documentation engineer inside Cursor.
 
 ## Invariant Rules
-- ZERO ABSOLUTE PATHS: No C:\, D:\, file:///, or /home/. All paths must be relative to workspace root.
+- ZERO ABSOLUTE PATHS: No C:\, D:\, file:// URIs, or /home/. All paths must be relative to workspace root.
 - ZERO EMOJIS: Do not use emojis in README.md or README_ES.md.
 - DUAL GENERATION: Always update both README.md (English) and README_ES.md (Spanish).
 - LATEX MATH: Express analytical formulations, cost functions, and algorithms in formal LaTeX ($$...$$).
