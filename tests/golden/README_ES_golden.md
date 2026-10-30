@@ -3,8 +3,13 @@
 **Idioma:** [English](README.md) | [Español](README_ES.md)
 
 [![Engine](https://img.shields.io/badge/Engine-iReadme%20Core-1a1a1a?style=flat-square)](#)
-[![Standard](https://img.shields.io/badge/Standard-Enterprise%20Paper--Grade%20v2.0-2b2b2b?style=flat-square)](#)
+[![Standard](https://img.shields.io/badge/Standard-Enterprise%20Paper--Grade%20v5.0-2b2b2b?style=flat-square)](#)
 [![Ecosystem](https://img.shields.io/badge/Ecosystem-Multi--AI%20%28Google%20%7C%20Claude%20%7C%20OpenAI%20%7C%20Cursor%29-34495e?style=flat-square)](#)
+[![iContext Federation](https://img.shields.io/badge/iContext-Federated%20v5.0-1a1a1a?style=flat-square)](#)
+[![iDirectory L0](https://img.shields.io/badge/L0-iDirectory%20v5.0-2b2b2b?style=flat-square)](#)
+[![ThinkingSeed L1](https://img.shields.io/badge/L1-ThinkingSeed%20v5.0-34495e?style=flat-square)](#)
+[![MetricsThinking L2](https://img.shields.io/badge/L2-MetricsThinking%20v5.0-4b5563?style=flat-square)](#)
+[![iReadme L3](https://img.shields.io/badge/L3-iReadme%20v5.0-000000?style=flat-square)](#)
 [![Architecture](https://img.shields.io/badge/Architecture-Clean%20Agentic%20Core-4b5563?style=flat-square)](#)
 [![Verification](https://img.shields.io/badge/Verification-Invariants%20100%25-000000?style=flat-square)](#)
 [![License](https://img.shields.io/badge/License-Proprietary-1a1a1a?style=flat-square)](#)
@@ -58,6 +63,14 @@ La topología de iReadme impone una separación estricta entre el Plano de Inges
                                | (Invariantes Pytest y Regresión)    |
                                +-------------------------------------+
 ```
+
+### Gobernanza Federada & Context Engineering iContext v5.0
+
+Este proyecto implementa formalmente el protocolo **iContext Federation Protocol v5.0**, coordinando las 4 capas canónicas de gobernanza agéntica:
+- **`L0` iDirectory v5.0**: Gobierna la topología canónica all-lowercase, balizas semánticas (`.context.yaml`), satélite criptográfico (`.context/tree.json`), presupuesto de tokens y aislamiento mediante cápsulas para subagentes (`<450 tokens`).
+- **`L1` ThinkingSeed v5.0**: Preserva el vector de memoria técnica y contratos simbólicos AST sin fuga de código fuente (`Zero Source Code`), certificado bajo 6 gates deterministas.
+- **`L2` MetricsThinking™ v5.0**: Evalúa la madurez técnica mediante evidencia física en 10 módulos canónicos, deriva semántica AST, formulación espectral FPIA ($S_{\text{spectral}}$, $PF_{\text{spectral}}$) y seguridad Zero-Trust.
+- **`L3` iReadme v5.0**: Sincroniza documentación dual institucional bajo el estándar Enterprise Paper-Grade v5.0 con paridad estructural estricta $\Phi = 1.0$, KaTeX formal y cero fugas de ruta local.
 
 ---
 

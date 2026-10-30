@@ -2,25 +2,29 @@
   "$schema": "../schemas/icontext_bus.schema.json",
   "protocol_version": "5.0.0",
   "project": "iReadme",
-  "updated_at": "2026-10-29T02:16:17.648664+00:00",
+  "updated_at": "2026-10-29T20:35:38.091344+00:00",
   "layers": {
     "l0_idirectory": {
       "version": "5.0.0",
       "topology_hash": "6d38bd6e055c351d89174d37b06ccef320818a9fa241dfe0a98964133d42a086",
       "contracts_ast_hash": "d22632cd6c77e51a6210b8945b97403dda375b40df4e9ea945e75b2eb078dfe3",
-      "active_nodes_count": 20,
+      "active_nodes_count": 21,
       "pruned_nodes_count": 8,
-      "active_tokens_estimate": 40555,
+      "active_tokens_estimate": 54064,
       "fpai_pruned_paths_count": 0
     },
     "l1_thinkingseed": {
       "present": true,
-      "version": "5.0",
+      "version": "5.0.0",
       "seed_path": "01_seed/seed-iReadme-master.md",
       "seed_hash": "ec25b01c9d594cb8ac16082bf6fd50cfb31d860490b5029b76e800e817091a1d",
       "synced_with_topology_hash": "6d38bd6e055c351d89174d37b06ccef320818a9fa241dfe0a98964133d42a086",
-      "ast_coverage_pct": 11.11,
-      "gates_passed": "pending"
+      "ast_coverage_pct": 100.0,
+      "gates_passed": "6/6",
+      "seed_version": "5.0",
+      "untracked_public_symbols": [],
+      "freshness_status": "SYNCED",
+      "last_validated_at": "2026-10-29T20:35:24.471950+00:00"
     },
     "l2_metricsthinking": {
       "present": true,
@@ -40,15 +44,12 @@
       "standard": "Enterprise Paper-Grade v5.0",
       "parity_score_phi": 1.0,
       "path_leakage_rate": 0.0,
-      "synced_with_topology_hash": "6d38bd6e055c351d89174d37b06ccef320818a9fa241dfe0a98964133d42a086"
+      "synced_with_topology_hash": "6d38bd6e055c351d89174d37b06ccef320818a9fa241dfe0a98964133d42a086",
+      "readme_en_path": "./README.md",
+      "readme_es_path": "./README_ES.md",
+      "zero_local_paths_verified": true,
+      "katex_valid": true,
+      "last_synced_at": "2026-10-29T20:35:24.865886+00:00"
     }
-  },
-  "l1_thinkingseed": {
-    "seed_path": "./01_seed/seed-iReadme-master.md",
-    "seed_version": "5.0",
-    "ast_coverage_pct": 100.0,
-    "untracked_Public_symbols": [],
-    "freshness_status": "SYNCED",
-    "last_validated_at": "2026-10-29T02:16:17.648664+00:00"
   }
 }

@@ -12,10 +12,10 @@
 | Dimensión de Métrica | Repositorio Completo | Seed Híbrido (`/seed`) | Seed Master (`/seedMaster`) |
 |---|:---:|:---:|:---:|
 | **Volumen de Archivos** | **86 archivos** | 0 archivo Markdown | 1 archivo Markdown |
-| **Líneas de Código / Texto** | **8,508 líneas** | 0 líneas | 160 líneas |
+| **Líneas de Código / Texto** | **8,551 líneas** | 0 líneas | 160 líneas |
 | **Peso Físico** | **0.40 MB** | 0.0 KB | 13.3 KB |
-| **Tokens Estimados** | **~103,573 tokens** | **~0 tokens** | **~2,005 tokens** |
-| **Ahorro de Contexto (Tokens)** | 0% (Base) | **0.00% de ahorro** | **98.06% de ahorro** |
+| **Tokens Estimados** | **~104,112 tokens** | **~0 tokens** | **~2,005 tokens** |
+| **Ahorro de Contexto (Tokens)** | 0% (Base) | **0.00% de ahorro** | **98.07% de ahorro** |
 | **Factor de Compresión** | 1x | **N/A** | **52x más ligero** |
 | **ÍNDICE DE COBERTURA DE ADN** | 100% (Código crudo) | **0.0% (ADN Esencial)** | **69.1% (ADN Exhaustivo)** |
 
@@ -61,6 +61,6 @@
 ---
 
 ## 5. CONCLUSIÓN Y VEREDICTO DE AUDITORÍA
-1. **Eficacia Demostrada:** El repositorio `iReadme` con **86 archivos (0.40 MB)** queda representado en su vector arquitectónico v3.0 en **13.3 KB** (98.06% de ahorro de tokens).
+1. **Eficacia Demostrada:** El repositorio `iReadme` con **86 archivos (0.40 MB)** queda representado en su vector arquitectónico v3.0 en **13.3 KB** (98.07% de ahorro de tokens).
 2. **Cobertura Semántica AST:** Se verificaron mediante `ast.parse()` **11/11 (100.0%)** contratos públicos y flags CLI documentados como firmas simbólicas de 1 línea.
 3. **Cumplimiento de Gates v3.0:** Estado global de los 6 validadores deterministas: **PASS (6/6 GATES OK)**.

@@ -3,8 +3,13 @@
 **Language:** [English](README.md) | [Español](README_ES.md)
 
 [![Engine](https://img.shields.io/badge/Engine-iReadme%20Core-1a1a1a?style=flat-square)](#)
-[![Standard](https://img.shields.io/badge/Standard-Enterprise%20Paper--Grade%20v2.0-2b2b2b?style=flat-square)](#)
+[![Standard](https://img.shields.io/badge/Standard-Enterprise%20Paper--Grade%20v5.0-2b2b2b?style=flat-square)](#)
 [![Ecosystem](https://img.shields.io/badge/Ecosystem-Multi--AI%20%28Google%20%7C%20Claude%20%7C%20OpenAI%20%7C%20Cursor%29-34495e?style=flat-square)](#)
+[![iContext Federation](https://img.shields.io/badge/iContext-Federated%20v5.0-1a1a1a?style=flat-square)](#)
+[![iDirectory L0](https://img.shields.io/badge/L0-iDirectory%20v5.0-2b2b2b?style=flat-square)](#)
+[![ThinkingSeed L1](https://img.shields.io/badge/L1-ThinkingSeed%20v5.0-34495e?style=flat-square)](#)
+[![MetricsThinking L2](https://img.shields.io/badge/L2-MetricsThinking%20v5.0-4b5563?style=flat-square)](#)
+[![iReadme L3](https://img.shields.io/badge/L3-iReadme%20v5.0-000000?style=flat-square)](#)
 [![Architecture](https://img.shields.io/badge/Architecture-Clean%20Agentic%20Core-4b5563?style=flat-square)](#)
 [![Verification](https://img.shields.io/badge/Verification-Invariants%20100%25-000000?style=flat-square)](#)
 [![License](https://img.shields.io/badge/License-Proprietary-1a1a1a?style=flat-square)](#)
@@ -58,6 +63,14 @@ The iReadme topology enforces a strict separation between the Multi-AI Ingestion
                                |    (Pytest Invariants & Regression) |
                                +-------------------------------------+
 ```
+
+### Federated Governance & Context Engineering (iContext v5.0)
+
+This project implements the **iContext Federation Protocol v5.0**, coordinating across all 4 canonical layers of autonomous agent governance:
+- **`L0` iDirectory v5.0**: Enforces all-lowercase directory topology, boundary beacons (`.context.yaml`), cryptographic state satellites (`.context/tree.json`), token budgeting, and subagent capsule isolation (`<450 tokens`).
+- **`L1` ThinkingSeed v5.0**: Preserves architectural technical memory and AST symbolic contracts with zero implementation source code (`Zero Source Code`), verified under 6 strict validation gates.
+- **`L2` MetricsThinking™ v5.0**: Computes ground-truth project maturity across 10 canonical modules, AST semantic drift detection, FPIA spectral efficiency ($S_{\text{spectral}}$, $PF_{\text{spectral}}$), and Zero-Tolerance security scanning.
+- **`L3` iReadme v5.0**: Synchronizes dual English/Spanish documentation under Enterprise Paper-Grade v5.0 with strict structural parity $\Phi = 1.0$, KaTeX formalisms, and zero absolute path leakage.
 
 ---
 

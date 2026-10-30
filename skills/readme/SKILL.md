@@ -65,9 +65,10 @@ Inspecciona el repositorio activo priorizando los artefactos de federación:
 4. **Manifiestos y Suites de Pruebas:** Revisar `pyproject.toml`, `package.json`, `Cargo.toml` y `tests/`.
 
 ### Paso 2: Generación Dual Simultánea (`README.md` y `README_ES.md`)
-Generar ambos archivos con las 8 secciones canónicas exactas:
+Generar ambos archivos con las 8 secciones canónicas exactas, inyectando las insignias / escudos de estado (badges) de las metodologías iContext activas en la cabecera:
 1. `## 1. Executive Abstract` / `## 1. Resumen Ejecutivo`
 2. `## 2. System Architecture & Topology` / `## 2. Arquitectura y Topología del Sistema`
+   - **Subsección Obligatoria de Gobernanza Federada:** Dentro de esta sección, incluir la subsección `### Federated Governance & Context Engineering (iContext v5.0)` (en inglés) / `### Gobernanza Federada & Context Engineering iContext v5.0` (en español), resumiendo cuáles de los 4 proyectos canónicos (`iDirectory`, `ThinkingSeed`, `MetricsThinking`, `iReadme`) se encuentran incorporados en el repositorio y detallando brevemente su función de optimización atencional y control agéntico.
 3. `## 3. Mathematical Formulation & Analytical Engines` / `## 3. Formulación Matemática y Motores Analíticos`
 4. `## 4. Empirical Performance & Benchmarks` / `## 4. Rendimiento Empírico y Benchmarks`
 5. `## 5. Repository Structure & Artifacts` / `## 5. Estructura del Repositorio y Artefactos` (usando estrictamente directorios en minúsculas: `01_seed/`, `02_foundation/`, `tools/`, `scripts/`, `tests/`)
